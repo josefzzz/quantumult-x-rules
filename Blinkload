@@ -1,0 +1,109 @@
+[general]
+excluded_routes=192.168.0.0/16, 172.16.0.0/12, 100.64.0.0/10, 10.0.0.0/8
+geo_location_checker=http://ip-api.com/json/?lang=zh-CN, https://github.com/KOP-XIAO/QuantumultX/raw/master/Scripts/IP_API.js
+network_check_url=http://www.baidu.com/
+server_check_url=http://www.gstatic.com/generate_204
+
+[dns]
+server=223.6.6.6
+server=223.5.5.5
+server=1.1.1.1
+server=8.8.8.8
+
+[policy]
+static=Master Selection, Auto Select, Fallback, Load Balance, HK Nodes, TW Nodes, SG Nodes, JP Nodes, US Nodes, Direct Out, Subsidiary Selection, DIRECT
+static=Subsidiary Selection, HK 01, HK 02, HK 03, HK 04, HK 05, HK 06, HK 07, HK 08, HK 09, HK 10, HK 11, HK 12, HK 13, HK 14, HK 15, HK 16, JP 01, JP 02, JP 03, JP 04, JP 05, JP 06, SG 01, SG 02, SG 03, SG 04, SG 05, SG 06, TW 01, TW 02, TW 03, TW 04, US 01, US 02, US 03, US 04, US 05
+available=Auto Select, HK 01, HK 02, HK 03, HK 04, HK 05, HK 06, HK 07, HK 08, HK 09, HK 10, HK 11, HK 12, HK 13, HK 14, HK 15, HK 16, JP 01, JP 02, JP 03, JP 04, JP 05, JP 06, SG 01, SG 02, SG 03, SG 04, SG 05, SG 06, TW 01, TW 02, TW 03, TW 04, US 01, US 02, US 03, US 04, US 05, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Auto.png
+available=Fallback, HK 01, HK 02, HK 03, HK 04, HK 05, HK 06, HK 07, HK 08, HK 09, HK 10, HK 11, HK 12, HK 13, HK 14, HK 15, HK 16, JP 01, JP 02, JP 03, JP 04, JP 05, JP 06, SG 01, SG 02, SG 03, SG 04, SG 05, SG 06, TW 01, TW 02, TW 03, TW 04, US 01, US 02, US 03, US 04, US 05
+round-robin=Load Balance, HK 01, HK 02, HK 03, HK 04, HK 05, HK 06, HK 07, HK 08, HK 09, HK 10, HK 11, HK 12, HK 13, HK 14, HK 15, HK 16, JP 01, JP 02, JP 03, JP 04, JP 05, JP 06, SG 01, SG 02, SG 03, SG 04, SG 05, SG 06, TW 01, TW 02, TW 03, TW 04, US 01, US 02, US 03, US 04, US 05
+available=HK Nodes, HK 01, HK 02, HK 03, HK 04, HK 05, HK 06, HK 07, HK 08, HK 09, HK 10, HK 11, HK 12, HK 13, HK 14, HK 15, HK 16
+available=JP Nodes, JP 01, JP 02, JP 03, JP 04, JP 05, JP 06
+available=US Nodes, US 01, US 02, US 03, US 04, US 05
+available=TW Nodes, TW 01, TW 02, TW 03, TW 04
+available=SG Nodes, SG 01, SG 02, SG 03, SG 04, SG 05, SG 06
+static=Telegram, Master Selection, Auto Select, SG Nodes, HK Nodes, TW Nodes, JP Nodes, US Nodes, Direct Out, Subsidiary Selection, DIRECT
+static=Netflix, Master Selection, Auto Select, SG Nodes, HK Nodes, TW Nodes, JP Nodes, US Nodes, Direct Out, Subsidiary Selection, DIRECT
+static=Bilibili, GeoIP, TW Nodes, HK Nodes
+static=Overseas Media, Master Selection, Auto Select, HK Nodes, TW Nodes, SG Nodes, JP Nodes, US Nodes, Direct Out, Subsidiary Selection, DIRECT, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/GlobalMedia.png
+static=Domestic Media, DIRECT, HK Nodes, TW Nodes, SG Nodes, JP Nodes, Subsidiary Selection, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/DomesticMedia.png
+static=Google FCM, DIRECT, Master Selection, US Nodes, HK Nodes, TW Nodes, SG Nodes, JP Nodes, Direct Out, Subsidiary Selection
+static=OneDrive, DIRECT, Master Selection, US Nodes, HK Nodes, TW Nodes, SG Nodes, JP Nodes, Direct Out, Subsidiary Selection
+static=Apple Services, DIRECT, Master Selection, US Nodes, HK Nodes, TW Nodes, SG Nodes, JP Nodes, Direct Out, Subsidiary Selection, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Apple.png
+static=GeoIP, DIRECT, Master Selection, Auto Select, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Direct.png
+static=Adblock, REJECT, DIRECT
+static=Program AD Ban, REJECT, DIRECT
+static=Final, Master Selection, Auto Select, DIRECT, HK Nodes, TW Nodes, SG Nodes, JP Nodes, US Nodes, Direct Out, Subsidiary Selection, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Final.png
+static=Direct Out, direct
+
+[server_remote]
+
+[filter_remote]
+https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvTG9jYWxBcmVhTmV0d29yay5saXN0&group=8J-OryDlhajnkIPnm7Tov54, tag=GeoIP, enabled=true
+https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvVW5CYW4ubGlzdA&group=8J-OryDlhajnkIPnm7Tov54, tag=GeoIP, enabled=true
+https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvQmFuQUQubGlzdA&group=8J-bkSDlub_lkYrmi6bmiKo, tag=Adblock, enabled=true
+https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvQmFuUHJvZ3JhbUFELmxpc3Q&group=8J-NgyDlupTnlKjlh4DljJY, tag=Program AD Ban, enabled=true
+https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUnVsZXNldC9Hb29nbGVGQ00ubGlzdA&group=8J-ToiDosLfmrYxGQ00, tag=Google FCM, enabled=true
+https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvR29vZ2xlQ04ubGlzdA&group=8J-OryDlhajnkIPnm7Tov54, tag=GeoIP, enabled=true
+https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvT25lRHJpdmUubGlzdA&group=4pOC77iPIOW-rui9r-S6keebmA, tag=OneDrive, enabled=true
+https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvQXBwbGUubGlzdA&group=8J-NjiDoi7nmnpzmnI3liqE, tag=Apple Services, enabled=true
+https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvVGVsZWdyYW0ubGlzdA&group=8J-TsiDnlLXmiqXmtojmga8, tag=Telegram, enabled=true
+https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUnVsZXNldC9OZXRmbGl4Lmxpc3Q&group=8J-OpSDlpYjpo57op4bpopE, tag=Netflix, enabled=true
+https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUnVsZXNldC9BbWF6b25JcC5saXN0&group=8J-OpSDlpYjpo57op4bpopE, tag=Netflix, enabled=true
+https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUnVsZXNldC9CaWxpYmlsaS5saXN0&group=8J-TuiDlk5Tlk6nlk5Tlk6k, tag=Bilibili, enabled=true
+https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUnVsZXNldC9CaWxpYmlsaUhNVC5saXN0&group=8J-TuiDlk5Tlk6nlk5Tlk6k, tag=Bilibili, enabled=true
+https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvQ2hpbmFNZWRpYS5saXN0&group=8J-MjyDlm73lhoXlqpLkvZM, tag=Domestic Media, enabled=true
+https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUHJveHlNZWRpYS5saXN0&group=8J-MjSDlm73lpJblqpLkvZM, tag=Overseas Media, enabled=true
+https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUHJveHlHRldsaXN0Lmxpc3Q&group=8J-agCDoioLngrnpgInmi6k, tag=Master Selection, enabled=true
+https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvQ2hpbmFEb21haW4ubGlzdA&group=8J-OryDlhajnkIPnm7Tov54, tag=GeoIP, enabled=true
+https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvQ2hpbmFDb21wYW55SXAubGlzdA&group=8J-OryDlhajnkIPnm7Tov54, tag=GeoIP, enabled=true
+https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvRG93bmxvYWQubGlzdA&group=8J-OryDlhajnkIPnm7Tov54, tag=GeoIP, enabled=true
+
+[rewrite_remote]
+
+[server_local]
+shadowsocks = iepl.hk.47c9.6in4.dev:23371, method=xchacha20-ietf-poly1305, password=27ChN5, obfs=http, obfs-host=ds.download.windowsupdate.com, fast-open=false, udp-relay=true, tag=HK 01
+shadowsocks = iepl.hk.4bee.6in4.dev:23371, method=xchacha20-ietf-poly1305, password=27ChN5, obfs=http, obfs-host=ds.download.windowsupdate.com, fast-open=false, udp-relay=true, tag=HK 02
+shadowsocks = iepl.hk.94f6.6in4.dev:23371, method=xchacha20-ietf-poly1305, password=27ChN5, obfs=http, obfs-host=ds.download.windowsupdate.com, fast-open=false, udp-relay=true, tag=HK 03
+shadowsocks = iepl.hk.3434.6in4.dev:23371, method=xchacha20-ietf-poly1305, password=27ChN5, obfs=http, obfs-host=ds.download.windowsupdate.com, fast-open=false, udp-relay=true, tag=HK 04
+shadowsocks = iepl.hk.6d57.6in4.dev:23371, method=xchacha20-ietf-poly1305, password=27ChN5, obfs=http, obfs-host=ds.download.windowsupdate.com, fast-open=false, udp-relay=true, tag=HK 05
+shadowsocks = iepl.hk.b8c3.6in4.dev:23371, method=xchacha20-ietf-poly1305, password=27ChN5, obfs=http, obfs-host=ds.download.windowsupdate.com, fast-open=false, udp-relay=true, tag=HK 06
+shadowsocks = iepl.hk.7f5b.6in4.dev:23371, method=xchacha20-ietf-poly1305, password=27ChN5, obfs=http, obfs-host=ds.download.windowsupdate.com, fast-open=false, udp-relay=true, tag=HK 07
+shadowsocks = iepl.hk.d934.6in4.dev:23371, method=xchacha20-ietf-poly1305, password=27ChN5, obfs=http, obfs-host=ds.download.windowsupdate.com, fast-open=false, udp-relay=true, tag=HK 08
+shadowsocks = iepl.hk.738b.6in4.dev:23371, method=xchacha20-ietf-poly1305, password=27ChN5, obfs=http, obfs-host=ds.download.windowsupdate.com, fast-open=false, udp-relay=true, tag=HK 09
+shadowsocks = iepl.hk.a184.6in4.dev:23371, method=xchacha20-ietf-poly1305, password=27ChN5, obfs=http, obfs-host=ds.download.windowsupdate.com, fast-open=false, udp-relay=true, tag=HK 10
+shadowsocks = iepl.hk.26a2.6in4.dev:23371, method=xchacha20-ietf-poly1305, password=27ChN5, obfs=http, obfs-host=ds.download.windowsupdate.com, fast-open=false, udp-relay=true, tag=HK 11
+shadowsocks = iepl.hk.b611.6in4.dev:23371, method=xchacha20-ietf-poly1305, password=27ChN5, obfs=http, obfs-host=ds.download.windowsupdate.com, fast-open=false, udp-relay=true, tag=HK 12
+shadowsocks = iepl.hk.c8fb.6in4.dev:23371, method=xchacha20-ietf-poly1305, password=27ChN5, obfs=http, obfs-host=ds.download.windowsupdate.com, fast-open=false, udp-relay=true, tag=HK 13
+shadowsocks = iepl.hk.5a64.6in4.dev:23371, method=xchacha20-ietf-poly1305, password=27ChN5, obfs=http, obfs-host=ds.download.windowsupdate.com, fast-open=false, udp-relay=true, tag=HK 14
+shadowsocks = iepl.hk.0b3f.6in4.dev:23371, method=xchacha20-ietf-poly1305, password=27ChN5, obfs=http, obfs-host=ds.download.windowsupdate.com, fast-open=false, udp-relay=true, tag=HK 15
+shadowsocks = iepl.hk.b865.6in4.dev:23371, method=xchacha20-ietf-poly1305, password=27ChN5, obfs=http, obfs-host=ds.download.windowsupdate.com, fast-open=false, udp-relay=true, tag=HK 16
+shadowsocks = iepl.jp.d378.6in4.dev:23371, method=xchacha20-ietf-poly1305, password=27ChN5, obfs=http, obfs-host=ds.download.windowsupdate.com, fast-open=false, udp-relay=true, tag=JP 01
+shadowsocks = iepl.jp.279d.6in4.dev:23371, method=xchacha20-ietf-poly1305, password=27ChN5, obfs=http, obfs-host=ds.download.windowsupdate.com, fast-open=false, udp-relay=true, tag=JP 02
+shadowsocks = iepl.jp.70ba.6in4.dev:23371, method=xchacha20-ietf-poly1305, password=27ChN5, obfs=http, obfs-host=ds.download.windowsupdate.com, fast-open=false, udp-relay=true, tag=JP 03
+shadowsocks = iepl.jp.f24f.6in4.dev:23371, method=xchacha20-ietf-poly1305, password=27ChN5, obfs=http, obfs-host=ds.download.windowsupdate.com, fast-open=false, udp-relay=true, tag=JP 04
+shadowsocks = iepl.jp.de0a.6in4.dev:23371, method=xchacha20-ietf-poly1305, password=27ChN5, obfs=http, obfs-host=ds.download.windowsupdate.com, fast-open=false, udp-relay=true, tag=JP 05
+shadowsocks = iepl.jp.aec3.6in4.dev:23371, method=xchacha20-ietf-poly1305, password=27ChN5, obfs=http, obfs-host=ds.download.windowsupdate.com, fast-open=false, udp-relay=true, tag=JP 06
+shadowsocks = iepl.sg.8059.6in4.dev:23371, method=xchacha20-ietf-poly1305, password=27ChN5, obfs=http, obfs-host=ds.download.windowsupdate.com, fast-open=false, udp-relay=true, tag=SG 01
+shadowsocks = iepl.sg.a3b2.6in4.dev:23371, method=xchacha20-ietf-poly1305, password=27ChN5, obfs=http, obfs-host=ds.download.windowsupdate.com, fast-open=false, udp-relay=true, tag=SG 02
+shadowsocks = iepl.sg.6c8f.6in4.dev:23371, method=xchacha20-ietf-poly1305, password=27ChN5, obfs=http, obfs-host=ds.download.windowsupdate.com, fast-open=false, udp-relay=true, tag=SG 03
+shadowsocks = iepl.sg.f978.6in4.dev:23371, method=xchacha20-ietf-poly1305, password=27ChN5, obfs=http, obfs-host=ds.download.windowsupdate.com, fast-open=false, udp-relay=true, tag=SG 04
+shadowsocks = iepl.sg.d464.6in4.dev:23371, method=xchacha20-ietf-poly1305, password=27ChN5, obfs=http, obfs-host=ds.download.windowsupdate.com, fast-open=false, udp-relay=true, tag=SG 05
+shadowsocks = iepl.sg.4add.6in4.dev:23371, method=xchacha20-ietf-poly1305, password=27ChN5, obfs=http, obfs-host=ds.download.windowsupdate.com, fast-open=false, udp-relay=true, tag=SG 06
+shadowsocks = iepl.tw.aov3.6in4.dev:23371, method=xchacha20-ietf-poly1305, password=27ChN5, obfs=http, obfs-host=ds.download.windowsupdate.com, fast-open=false, udp-relay=true, tag=TW 01
+shadowsocks = iepl.tw.27g4.6in4.dev:23371, method=xchacha20-ietf-poly1305, password=27ChN5, obfs=http, obfs-host=ds.download.windowsupdate.com, fast-open=false, udp-relay=true, tag=TW 02
+shadowsocks = iepl.tw.10v3.6in4.dev:23371, method=xchacha20-ietf-poly1305, password=27ChN5, obfs=http, obfs-host=ds.download.windowsupdate.com, fast-open=false, udp-relay=true, tag=TW 03
+shadowsocks = iepl.tw.591f.6in4.dev:23371, method=xchacha20-ietf-poly1305, password=27ChN5, obfs=http, obfs-host=ds.download.windowsupdate.com, fast-open=false, udp-relay=true, tag=TW 04
+shadowsocks = iepl.us.6713.6in4.dev:23371, method=xchacha20-ietf-poly1305, password=27ChN5, obfs=http, obfs-host=ds.download.windowsupdate.com, fast-open=false, udp-relay=true, tag=US 01
+shadowsocks = iepl.us.0255.6in4.dev:23371, method=xchacha20-ietf-poly1305, password=27ChN5, obfs=http, obfs-host=ds.download.windowsupdate.com, fast-open=false, udp-relay=true, tag=US 02
+shadowsocks = iepl.us.f07f.6in4.dev:23371, method=xchacha20-ietf-poly1305, password=27ChN5, obfs=http, obfs-host=ds.download.windowsupdate.com, fast-open=false, udp-relay=true, tag=US 03
+shadowsocks = iepl.us.087b.6in4.dev:23371, method=xchacha20-ietf-poly1305, password=27ChN5, obfs=http, obfs-host=ds.download.windowsupdate.com, fast-open=false, udp-relay=true, tag=US 04
+shadowsocks = iepl.us.01e5.6in4.dev:23371, method=xchacha20-ietf-poly1305, password=27ChN5, obfs=http, obfs-host=ds.download.windowsupdate.com, fast-open=false, udp-relay=true, tag=US 05
+
+[filter_local]
+GEOIP,CN,GeoIP
+FINAL,Final
+
+[rewrite_local]
+
+[mitm]
+
